@@ -1,0 +1,78 @@
+/* Navbar styling */
+.navbar {
+  background: rgb(2, 0, 36);
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Aligns logo left and links right */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+/* Logo styling */
+.navbar-logo {
+  width: 210px; /* Adjust as needed */
+  height: 65px;
+  object-fit: fill;
+  border-radius: 15px;
+  padding: 5px 0 5px 5px;
+}
+
+/* Navbar links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: rgb(144, 11, 24);
+  border-radius: 5px;
+}
+
+/* Dropdown styling */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgb(5, 3, 49);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 150px;
+  display: block;
+  border-radius: 2rem;
+}
+
+.dropdown-menu li {
+  padding: 8px;
+  text-align: left;
+}
+
+.dropdown-menu li a {
+  color: white;
+  display: block;
+  padding: 10px;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #bc1a1a;
+}
